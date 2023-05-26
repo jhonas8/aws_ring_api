@@ -5,7 +5,9 @@
                  [ring/ring-json "0.5.1"]
                  [clojure.jdbc/clojure.jdbc-c3p0 "0.3.4"]
                  [org.clojure/java.jdbc "0.7.12"]
-                 [cheshire "5.11.0"]]
+                 [cheshire "5.11.0"]
+                 [environ "1.2.0"]
+                 [com.taoensso/faraday "1.12.0" :exclusions [org.clojure/tools.reader]]]
   :plugins [[lein-ring "0.12.6"]]
   :ring {:handler ring-api.handler/app}
   :profiles
