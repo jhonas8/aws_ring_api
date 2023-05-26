@@ -13,7 +13,7 @@
     (= environment "dev") (merge dynamo-config {:endpoint "http://localhost:8000"})
     :else dynamo-config))
 
-(defn print-tables []
+(defn list-tables []
   (let [tables (far/list-tables (-> dynamo-config
                                     (merge-config-for-environment (get-environment))))]
-    (println tables)))
+    tables))
