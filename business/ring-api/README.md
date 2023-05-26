@@ -14,6 +14,5 @@ To start a web server for the application, run:
 
     lein ring server
 
-## License
-
-Copyright © 2023 FIXME
+## Environment variables
+I recommend you to use a `.lein-env` file to set you environment variables. You must follow the pattern of .lein_env_example.
